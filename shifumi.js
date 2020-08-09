@@ -26,8 +26,14 @@ const startGame = () => {
     const options = document.querySelectorAll(".options button");
     const playHand = document.querySelector(".player-hand")
     const computerHand = document.querySelector(".computer-hand")
-    //Faire fonctionner les mains
-    compareHands(this.textContent, computerChoice);
+    const hands = document.querySelectorAll('.hands img')
+
+    hands.forEach(hand =>{
+        hands.addEventListener('animationed', function(){
+            this.style.animation = '';
+        });
+    });
+
     // Option du PC
     const computerOptions = ['rock', 'paper', 'scissors'];
 
@@ -36,9 +42,19 @@ const startGame = () => {
             // Choix du PC
             const computerNumber = Math.floor(Math.random() * 3);
             const computerChoice = computerOptions[computerNumber];
-    // comparaison des mains
+
+            setTimeout(() =>{
+        //Faire fonctionner les mains
+        compareHands(this.textContent, computerChoice);
+    
+    // chargement image des mains
     playerHand.src = `/assets/${this.textContent}.png`;
     computerHand.src = `/assets/${computerChoice}.png`;
+            }, 2000)
+
+            //animation
+    playerHand.style.animation = "shakePlayer 2s ease";
+    ComputerHand.style.animation = "shakeComputer 2s ease";
         });
     });
  };
