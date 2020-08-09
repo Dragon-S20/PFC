@@ -82,14 +82,15 @@ const startGame = () => {
      }
     // vérifier pour le choix du papier
  }
- if (playerChoice === "paper"){
-    if (computerChoice === "scissors"){
-        winner.textContent = 'Ordinateur gagne';
+
+    if (playerChoice === "paper"){
+         if (computerChoice === "scissors"){
+        winner.textContent = "Ordinateur gagne";
         cScore++;
         updateScore();
         return;
-    } else {
-        winner.textContent = 'joueur gagne gagne';
+        } else {
+        winner.textContent = "Joueur gagne";
         pScore++;
         updateScore();
         return;
@@ -110,7 +111,8 @@ if (playerChoice === "scissors") {
         updateScore();
         return;
     }
-}
+    }
+};
     startGame();
     playMatch();
     updateScore();
