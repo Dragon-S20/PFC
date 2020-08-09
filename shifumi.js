@@ -9,7 +9,7 @@ const startGame = () => {
 
     playBtn.addEventlistener("click", () => {
         introScreen.classList.add("fadeOut");
-        match.classList.add("fadeIn")
+        match.classList.add("fadeIn");
     });
  };
  
@@ -60,12 +60,12 @@ const startGame = () => {
    }
 
     const comparehands = (playerChoice, computerChoice) => {
-     const winner = document.querySelector(".winner")
+    const winner = document.querySelector(".winner")
      // fonction vérifie l'égalité
      if (playerChoice === computerChoice) {
          winner.textContent = "Egalité";
          return;
-     }
+        }  
      //fonction vérifie pour pierre
      if (playerChoice === "rock") {
          if (computerChoice === "scissors") {
@@ -79,10 +79,8 @@ const startGame = () => {
              updateScore ();
              return;
          }
-     }
-    // vérifier pour le choix du papier
- }
-
+        }
+     // vérifier pour le choix du papier
     if (playerChoice === "paper"){
          if (computerChoice === "scissors"){
         winner.textContent = "Ordinateur gagne";
@@ -95,11 +93,11 @@ const startGame = () => {
         updateScore();
         return;
     }
-}
+        }
 
     // fonction vérifie les ciseaux
 
-if (playerChoice === "scissors") {
+    if (playerChoice === "scissors") {
     if (computerChoice === "rock") {
         winner.textContent = "Ordinateur gagne";
         cScore++;
@@ -111,11 +109,7 @@ if (playerChoice === "scissors") {
         updateScore();
         return;
     }
-    }
-};
-    startGame();
-    playMatch();
-    updateScore();
-};
-
-game ()
+         }
+        };
+    };
+    game ();
