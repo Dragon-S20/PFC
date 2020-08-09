@@ -111,5 +111,9 @@ const startGame = () => {
     }
          }
         };
+        startGame = ()
+        playMatch = ()
+        updateScore = ()
     };
+
     game ();
