@@ -39,13 +39,13 @@ section {
 }
 
 .score h2 {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .score p {
     text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    padding: 0.625rem;
+    font-size: 1.56rem;
 }
 
 .intro {
@@ -59,20 +59,20 @@ section {
 }
 
 .intro h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
 
 }
 
 .intro button,
 .match button {
-    width: 150px;
-    height: 50px;
+    width: 9.375rem;
+    height: 3.125rem;
     background: none;
     border: none;
     color: var(--fonce);
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color: var(--beige);;
-    border-radius: 3px;
+    border-radius: 0.19rem;
     cursor: pointer;
 
 }
@@ -85,9 +85,9 @@ section {
     /*transition: opacity 0.5s ease 0.5s;*/
 }
 .winner{
-    color: rgb(224,224,224);
+    color: var(--beige);
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
 
 }
 
