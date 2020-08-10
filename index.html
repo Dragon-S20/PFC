@@ -1,41 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"></script>
-    <link rel="stylesheet" href="./style.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style.css" />
     <title>ShiFuMi</title>
-</head>
-<body>
- <section class="jeu">
-    <div class="points">
-        <div class="points-joueur">
-            <h2>Joueur</h2>
-            <p>0</p>
+  </head>
+  <body>
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>0</p>
         </div>
-        <div class="points-ordinateur">
-            <h2>Ordinateur</h2>
-            <p>0</p>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
         </div>
-    </div>
-    <div class="debut">
-        <h1>ShiFuMi</h1>
-        <button>Jouons ensemble!</button>
-    </div>
-    <div class="Fin du match">
-        <h2 class="vainqueur">Faites un choix</h2>
-        <div class="mains">
+      </div>
 
+      <div class="intro">
+        <h1>ShiFuMi</h1>
+        <button>Let's Play</button>
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img class="player-hand" src="/assets/rock.png" alt="rock" />
+          <img class="computer-hand" src="/assets/rock.png" alt="rock" />
         </div>
         <div class="options">
-            <button class="pierre"></button>
-            <button class="papier"></button>
-            <button class="ciseaux"></button>
-        <!-- A remplacer par Shi Fu Mi????-->
+          <button class="shi">Shi</button>
+          <button class="fu">Fu</button>
+          <button class="mi">Mi</button>
         </div>
-    </div>
- </section>
- <script src="shifumi.js"></script>   
-</body>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
 </html>
