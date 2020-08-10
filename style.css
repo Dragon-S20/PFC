@@ -1,3 +1,10 @@
+:root {
+    --brun: #c26c3d;
+    --fonce: #674618;
+    --blue: #80c1d6;
+    --beige: #f0e3d0;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -6,49 +13,57 @@
   
   section {
     height: 100vh;
-    background-color: rgb(39, 41, 68);
-    font-family: sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    color: var(--fonce);
+    background-color: var(--beige);
+    background-image: url("/assets/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local, fixed;
+    text-align: center;
   }
   
   .score {
-    color: rgb(224, 224, 224);
+    color: var(--fonce);
+    text-transform: uppercase;
     height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
   .score h2 {
-    font-size: 30px;
+    font-size: 3.125rem;
   }
   .score p {
     text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    padding: 0.625rem;
+    font-size: 3rem;
   }
   
   .intro {
-    color: rgb(224, 224, 224);
+    color: var(--beige);
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transition: opacity 0.5s ease;
+    /*transition: opacity 0.5s ease;*/
   }
   
   .intro h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .intro button,
   .match button {
-    width: 150px;
-    height: 50px;
+    width: 9.375rem;
+    height: 3.125rem;
     background: none;
     border: none;
-    color: rgb(224, 224, 224);
-    font-size: 20px;
-    background: rgb(45, 117, 96);
-    border-radius: 3px;
+    color: var(--fonce);
+    font-size: 1.25rem;
+    background-color: var(--beige);
+    border: 0.125rem solid;
+    border-radius: 1rem;
     cursor: pointer;
   }
   
@@ -57,12 +72,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease 0.5s;
+    /*transition: opacity 0.5s ease 0.5s;*/
   }
   .winner {
-    color: rgb(224, 224, 224);
+    color: var(--beige);
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   
   .hands,
