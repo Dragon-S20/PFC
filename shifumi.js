@@ -3,9 +3,9 @@ let pScore = 0;
 let cScore = 0;
 
 const startGame = () => {
-    const playBtn = document.querySelector(".intro button")
-    const introScreen = document.querySelector(".intro")
-    const match = document.querySelector(".match")
+    const playBtn = document.querySelector(".intro button");
+    const introScreen = document.querySelector(".intro");
+    const match = document.querySelector(".match");
 
     playBtn.addEventlistener("click", () => {
         introScreen.classList.add("fadeOut");
@@ -108,12 +108,12 @@ const startGame = () => {
         pScore++;
         updateScore();
         return;
-    }
          }
-        };
-        startGame = ()
-        playMatch = ()
-        updateScore = ()
+        }
     };
 
+    startGame = ();
+    playMatch = ();
+    updateScore = ();
+}
     game ();

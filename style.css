@@ -24,14 +24,15 @@ section {
     background-color: var(--beige);
     background-image: url("assets/bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: local, fixed;
     text-align: center;
     /*font-size: 1.5rem;*/
 }
 
 .score {
     color: var(--fonce);
-    /*color: rgb(224,224,224);*/
+    text-transform: uppercase;
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -45,7 +46,7 @@ section {
 .score p {
     text-align: center;
     padding: 0.625rem;
-    font-size: 1.56rem;
+    font-size: 3rem;
 }
 
 .intro {
@@ -71,8 +72,9 @@ section {
     border: none;
     color: var(--fonce);
     font-size: 1.25rem;
-    background-color: var(--beige);;
-    border-radius: 0.19rem;
+    background-color: var(--beige);
+    border: 0.125rem solid;
+    border-radius: 1rem;
     cursor: pointer;
 
 }
