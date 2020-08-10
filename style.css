@@ -1,17 +1,37 @@
+:root {
+    --brun: #c26c3d;
+    --fonce: #674618;
+    --blue: #80c1d6;
+    --beige: #f0e3d0;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
 section {
     height: 100vh;
-    background-color: rgb(39,41,68);
-    font-family: sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    color: var(--fonce);
+    background-color: var(--beige);
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /*font-size: 1.5rem;*/
 }
 
 .score {
-    color: rgb(224,224,224);
+    color: var(--fonce);
+    /*color: rgb(224,224,224);*/
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -19,7 +39,7 @@ section {
 }
 
 .score h2 {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .score p {
@@ -29,7 +49,7 @@ section {
 }
 
 .intro {
-    color: rgb(224,224,224);
+    color: var(--beige);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -49,9 +69,9 @@ section {
     height: 50px;
     background: none;
     border: none;
-    color: rgb(224,224,224);
+    color: var(--fonce);
     font-size: 20px;
-    background: rgb(45,117,96);
+    background-color: var(--beige);;
     border-radius: 3px;
     cursor: pointer;
 
