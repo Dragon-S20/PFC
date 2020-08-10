@@ -3,13 +3,15 @@ let pScore = 0;
 let cScore = 0;
 
 const startGame = () => {
-    const playBtn = document.querySelector(".intro button");
+    const playBtn = document.querySelector(".play");
     const introScreen = document.querySelector(".intro");
     const match = document.querySelector(".match");
+    const audio = document.querySelector(".audio");
 
-    playBtn.addEventlistener("click", () => {
+    playBtn.addEventlistener("click", function () {
         introScreen.classList.add("fadeOut");
         match.classList.add("fadeIn");
+        audio.play();
     });
  };
  
@@ -114,6 +116,5 @@ const startGame = () => {
 
     startGame = ();
     playMatch = ();
-    updateScore = ();
 }
     game ();
